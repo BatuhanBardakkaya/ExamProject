@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F1F0432-2E87-45E2-97C2-D9BB42F7119D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ExamProject</RootNamespace>
+    <AssemblyName>ExamProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="examdatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>examdatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="examdatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>examdatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="examdatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>examdatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGirisekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGirisekran.Designer.cs">
+      <DependentUpon>FrmGirisekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmogranasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmogranasayfa.Designer.cs">
+      <DependentUpon>Frmogranasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrencikayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrencikayit.Designer.cs">
+      <DependentUpon>FrmOgrencikayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgretmenKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgretmenKayit.Designer.cs">
+      <DependentUpon>FrmOgretmenKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminGiris.Designer.cs">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrtAnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrtAnaEkran.Designer.cs">
+      <DependentUpon>OgrtAnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmGirisekran.resx">
+      <DependentUpon>FrmGirisekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmogranasayfa.resx">
+      <DependentUpon>Frmogranasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrencikayit.resx">
+      <DependentUpon>FrmOgrencikayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgretmenKayit.resx">
+      <DependentUpon>FrmOgretmenKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminGiris.resx">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrtAnaEkran.resx">
+      <DependentUpon>OgrtAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="examdatabaseDataSet.xsc">
+      <DependentUpon>examdatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>examdatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="examdatabaseDataSet.xss">
+      <DependentUpon>examdatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet1.xsc">
+      <DependentUpon>examdatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>examdatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="examdatabaseDataSet1.xss">
+      <DependentUpon>examdatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet2.xsc">
+      <DependentUpon>examdatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>examdatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="examdatabaseDataSet2.xss">
+      <DependentUpon>examdatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e4b72ecbb7c98f492629cbeee66435e8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1177884617-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PngItem_2363783.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9d1fa68d45beff3aa4a0f8361241da70.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
