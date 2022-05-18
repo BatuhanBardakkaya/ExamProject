@@ -43,6 +43,8 @@ namespace ExamProject
             this.Kytadtxt = new System.Windows.Forms.TextBox();
             this.Kyttelnotxt = new System.Windows.Forms.TextBox();
             this.Kytbutton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -71,7 +73,7 @@ namespace ExamProject
             this.Kytsoyadtxt.Location = new System.Drawing.Point(79, 291);
             this.Kytsoyadtxt.Name = "Kytsoyadtxt";
             this.Kytsoyadtxt.Size = new System.Drawing.Size(167, 22);
-            this.Kytsoyadtxt.TabIndex = 4;
+            this.Kytsoyadtxt.TabIndex = 2;
             // 
             // KytSadlbl
             // 
@@ -88,7 +90,7 @@ namespace ExamProject
             this.KytKadtxt.Location = new System.Drawing.Point(405, 198);
             this.KytKadtxt.Name = "KytKadtxt";
             this.KytKadtxt.Size = new System.Drawing.Size(167, 22);
-            this.KytKadtxt.TabIndex = 6;
+            this.KytKadtxt.TabIndex = 3;
             // 
             // KytKadlbl
             // 
@@ -105,7 +107,7 @@ namespace ExamProject
             this.KytKsifretxt.Location = new System.Drawing.Point(405, 285);
             this.KytKsifretxt.Name = "KytKsifretxt";
             this.KytKsifretxt.Size = new System.Drawing.Size(167, 22);
-            this.KytKsifretxt.TabIndex = 8;
+            this.KytKsifretxt.TabIndex = 4;
             // 
             // KytKsiflbl
             // 
@@ -132,7 +134,7 @@ namespace ExamProject
             this.Kytemailtxt.Location = new System.Drawing.Point(804, 291);
             this.Kytemailtxt.Name = "Kytemailtxt";
             this.Kytemailtxt.Size = new System.Drawing.Size(167, 22);
-            this.Kytemailtxt.TabIndex = 12;
+            this.Kytemailtxt.TabIndex = 6;
             // 
             // KytEmaillbl
             // 
@@ -149,14 +151,14 @@ namespace ExamProject
             this.Kytadtxt.Location = new System.Drawing.Point(79, 198);
             this.Kytadtxt.Name = "Kytadtxt";
             this.Kytadtxt.Size = new System.Drawing.Size(167, 22);
-            this.Kytadtxt.TabIndex = 13;
+            this.Kytadtxt.TabIndex = 1;
             // 
             // Kyttelnotxt
             // 
             this.Kyttelnotxt.Location = new System.Drawing.Point(804, 198);
             this.Kyttelnotxt.Name = "Kyttelnotxt";
             this.Kyttelnotxt.Size = new System.Drawing.Size(167, 22);
-            this.Kyttelnotxt.TabIndex = 14;
+            this.Kyttelnotxt.TabIndex = 5;
             // 
             // Kytbutton
             // 
@@ -168,11 +170,23 @@ namespace ExamProject
             this.Kytbutton.UseVisualStyleBackColor = true;
             this.Kytbutton.Click += new System.EventHandler(this.Kytbutton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ExamProject.Properties.Resources.icons8_left_50;
+            this.pictureBox1.Location = new System.Drawing.Point(979, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // FrmOgrencikayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 485);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Kytbutton);
             this.Controls.Add(this.Kyttelnotxt);
             this.Controls.Add(this.Kytadtxt);
@@ -190,6 +204,7 @@ namespace ExamProject
             this.Name = "FrmOgrencikayit";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.FrmOgrencikayit_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,5 +226,6 @@ namespace ExamProject
         private System.Windows.Forms.TextBox Kytadtxt;
         private System.Windows.Forms.TextBox Kyttelnotxt;
         private System.Windows.Forms.Button Kytbutton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

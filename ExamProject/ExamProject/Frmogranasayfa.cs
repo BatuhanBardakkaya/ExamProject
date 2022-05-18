@@ -16,5 +16,26 @@ namespace ExamProject
         {
             InitializeComponent();
         }
+
+        private void BtnBilgiler_Click(object sender, EventArgs e)
+        {
+            FrmOgrenciBilgi frmOgrenciBilgi = new FrmOgrenciBilgi();
+            frmOgrenciBilgi.Show();
+            this.Hide();
+        }
+
+        private void BtnBasla_Click(object sender, EventArgs e)
+        {
+            FrmOgrSınav frmOgrSınav = new FrmOgrSınav();
+            frmOgrSınav.Show();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FrmGirisekran frmGirisekran = new FrmGirisekran();
+            frmGirisekran.Show();
+            this.Hide();
+        }
     }
 }

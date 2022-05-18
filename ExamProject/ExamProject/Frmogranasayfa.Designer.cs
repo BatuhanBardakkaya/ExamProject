@@ -34,6 +34,8 @@ namespace ExamProject
             this.BtnBasla = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.BtnBilgiler = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -64,6 +66,7 @@ namespace ExamProject
             this.BtnBasla.TabIndex = 6;
             this.BtnBasla.Text = "Başla";
             this.BtnBasla.UseVisualStyleBackColor = true;
+            this.BtnBasla.Click += new System.EventHandler(this.BtnBasla_Click);
             // 
             // label3
             // 
@@ -83,12 +86,25 @@ namespace ExamProject
             this.BtnBilgiler.TabIndex = 8;
             this.BtnBilgiler.Text = "Bilgilerimi Göster";
             this.BtnBilgiler.UseVisualStyleBackColor = true;
+            this.BtnBilgiler.Click += new System.EventHandler(this.BtnBilgiler_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ExamProject.Properties.Resources.icons8_left_50;
+            this.pictureBox1.Location = new System.Drawing.Point(757, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Frmogranasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnBilgiler);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.BtnBasla);
@@ -96,6 +112,7 @@ namespace ExamProject
             this.Controls.Add(this.label1);
             this.Name = "Frmogranasayfa";
             this.Text = "Frmogranasayfa";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,5 +125,6 @@ namespace ExamProject
         private System.Windows.Forms.Button BtnBasla;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BtnBilgiler;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

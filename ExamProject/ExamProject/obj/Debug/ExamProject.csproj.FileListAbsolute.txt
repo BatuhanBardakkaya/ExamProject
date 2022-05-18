@@ -11,3 +11,14 @@ D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.Form3.resources
 D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.FrmGirisekran.resources
 D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.FrmOgrencikayit.resources
 D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.FrmAdminGiris.resources
+D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.Frmogranasayfa.resources
+D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.OgrtAnaEkran.resources
+D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.FrmOgrenciBilgi.resources
+D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.FrmOgrtSoruekleGuncelle.resources
+D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.FrmOgrSınav.resources
+D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.FrmAdminAnaEkran.resources
+D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.FrmAdminOgr.resources
+D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.FrmAdminOgrt.resources
+D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.FrmAdminSoru.resources
+D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.FrmSifredegistir.resources
+D:\C#\ExamProject\ExamProject\obj\Debug\ExamProject.FrmOgrtOgrencibilgi.resources

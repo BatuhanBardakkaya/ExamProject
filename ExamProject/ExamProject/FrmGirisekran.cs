@@ -43,12 +43,13 @@ namespace ExamProject
         private void Loginbut_Click(object sender, EventArgs e)
         {
             connect.Open();
-            SqlCommand komut = new SqlCommand("select * from tblogrenci where ogrKAD='"+ogrtKadtxt.Text+ "' and ogrSifre= '"+ ogrtsifretxt.Text +"'",connect);
+            SqlCommand komut = new SqlCommand("select * from tblogrenci where ogrKAD='"+ KadTxtbox.Text+ "' and ogrSifre= '"+ KsifreTxtbox.Text +"'",connect);
             SqlDataReader dr = komut.ExecuteReader();
             if (dr.Read())
             {
                 Frmogranasayfa frmogranasayfa = new Frmogranasayfa();
                 frmogranasayfa.Show();
+                connect.Close();
             }
 
         }
@@ -88,9 +89,25 @@ namespace ExamProject
             {
                 OgrtAnaEkran ogrtAnaEkran = new OgrtAnaEkran();
                 ogrtAnaEkran.Show();
-
+                
 
             }
+            connect.Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmSifredegistir frmSifredegistir = new FrmSifredegistir();
+            frmSifredegistir.Show();
+            this.Hide();
+
+        }
+
+        private void ogrtsifreunuttum_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmSifredegistir frmSifredegistir = new FrmSifredegistir();
+            frmSifredegistir.Show();
+            this.Hide();
         }
     }
 }

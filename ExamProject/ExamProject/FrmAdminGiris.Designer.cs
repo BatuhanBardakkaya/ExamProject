@@ -29,24 +29,16 @@ namespace ExamProject
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Loginbut = new System.Windows.Forms.Button();
-            this.KsifreTxtbox = new System.Windows.Forms.TextBox();
-            this.KadTxtbox = new System.Windows.Forms.TextBox();
+            this.AdminSifreTxt = new System.Windows.Forms.TextBox();
+            this.AdminTxt = new System.Windows.Forms.TextBox();
             this.Ksifre = new System.Windows.Forms.Label();
             this.Kad = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ExamProject.Properties.Resources._9d1fa68d45beff3aa4a0f8361241da70;
-            this.pictureBox3.Location = new System.Drawing.Point(310, 55);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(153, 163);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
             // 
             // Loginbut
             // 
@@ -57,20 +49,22 @@ namespace ExamProject
             this.Loginbut.TabIndex = 22;
             this.Loginbut.Text = "Giriş Yap";
             this.Loginbut.UseVisualStyleBackColor = true;
+            this.Loginbut.Click += new System.EventHandler(this.Loginbut_Click);
             // 
-            // KsifreTxtbox
+            // AdminSifreTxt
             // 
-            this.KsifreTxtbox.Location = new System.Drawing.Point(301, 283);
-            this.KsifreTxtbox.Name = "KsifreTxtbox";
-            this.KsifreTxtbox.Size = new System.Drawing.Size(176, 22);
-            this.KsifreTxtbox.TabIndex = 21;
+            this.AdminSifreTxt.Location = new System.Drawing.Point(301, 283);
+            this.AdminSifreTxt.Name = "AdminSifreTxt";
+            this.AdminSifreTxt.PasswordChar = '*';
+            this.AdminSifreTxt.Size = new System.Drawing.Size(176, 22);
+            this.AdminSifreTxt.TabIndex = 21;
             // 
-            // KadTxtbox
+            // AdminTxt
             // 
-            this.KadTxtbox.Location = new System.Drawing.Point(301, 240);
-            this.KadTxtbox.Name = "KadTxtbox";
-            this.KadTxtbox.Size = new System.Drawing.Size(176, 22);
-            this.KadTxtbox.TabIndex = 20;
+            this.AdminTxt.Location = new System.Drawing.Point(301, 240);
+            this.AdminTxt.Name = "AdminTxt";
+            this.AdminTxt.Size = new System.Drawing.Size(176, 22);
+            this.AdminTxt.TabIndex = 20;
             // 
             // Ksifre
             // 
@@ -92,19 +86,42 @@ namespace ExamProject
             this.Kad.TabIndex = 18;
             this.Kad.Text = "Admin Adı:";
             // 
-            // Form4
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ExamProject.Properties.Resources.icons8_left_50;
+            this.pictureBox1.Location = new System.Drawing.Point(757, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ExamProject.Properties.Resources._9d1fa68d45beff3aa4a0f8361241da70;
+            this.pictureBox3.Location = new System.Drawing.Point(310, 55);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(153, 163);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            // 
+            // FrmAdminGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Loginbut);
-            this.Controls.Add(this.KsifreTxtbox);
-            this.Controls.Add(this.KadTxtbox);
+            this.Controls.Add(this.AdminSifreTxt);
+            this.Controls.Add(this.AdminTxt);
             this.Controls.Add(this.Ksifre);
             this.Controls.Add(this.Kad);
             this.Controls.Add(this.pictureBox3);
-            this.Name = "Form4";
+            this.Name = "FrmAdminGiris";
             this.Text = "Form4";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -115,9 +132,10 @@ namespace ExamProject
 
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button Loginbut;
-        private System.Windows.Forms.TextBox KsifreTxtbox;
-        private System.Windows.Forms.TextBox KadTxtbox;
+        private System.Windows.Forms.TextBox AdminSifreTxt;
+        private System.Windows.Forms.TextBox AdminTxt;
         private System.Windows.Forms.Label Ksifre;
         private System.Windows.Forms.Label Kad;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -78,15 +78,16 @@ namespace ExamProject
             this.KadTxtbox.Location = new System.Drawing.Point(185, 248);
             this.KadTxtbox.Name = "KadTxtbox";
             this.KadTxtbox.Size = new System.Drawing.Size(176, 22);
-            this.KadTxtbox.TabIndex = 2;
+            this.KadTxtbox.TabIndex = 1;
             this.KadTxtbox.TextChanged += new System.EventHandler(this.KadTxtbox_TextChanged);
             // 
             // KsifreTxtbox
             // 
             this.KsifreTxtbox.Location = new System.Drawing.Point(185, 291);
             this.KsifreTxtbox.Name = "KsifreTxtbox";
+            this.KsifreTxtbox.PasswordChar = '*';
             this.KsifreTxtbox.Size = new System.Drawing.Size(176, 22);
-            this.KsifreTxtbox.TabIndex = 3;
+            this.KsifreTxtbox.TabIndex = 2;
             // 
             // Loginbut
             // 
@@ -136,15 +137,16 @@ namespace ExamProject
             // 
             this.ogrtsifretxt.Location = new System.Drawing.Point(660, 291);
             this.ogrtsifretxt.Name = "ogrtsifretxt";
+            this.ogrtsifretxt.PasswordChar = '*';
             this.ogrtsifretxt.Size = new System.Drawing.Size(176, 22);
-            this.ogrtsifretxt.TabIndex = 11;
+            this.ogrtsifretxt.TabIndex = 4;
             // 
             // ogrtKadtxt
             // 
             this.ogrtKadtxt.Location = new System.Drawing.Point(660, 248);
             this.ogrtKadtxt.Name = "ogrtKadtxt";
             this.ogrtKadtxt.Size = new System.Drawing.Size(176, 22);
-            this.ogrtKadtxt.TabIndex = 10;
+            this.ogrtKadtxt.TabIndex = 3;
             // 
             // label1
             // 
@@ -175,6 +177,7 @@ namespace ExamProject
             this.ogrtsifreunuttum.TabIndex = 14;
             this.ogrtsifreunuttum.TabStop = true;
             this.ogrtsifreunuttum.Text = "Şifremi unuttum...";
+            this.ogrtsifreunuttum.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ogrtsifreunuttum_LinkClicked);
             // 
             // linkLabel1
             // 
@@ -185,6 +188,7 @@ namespace ExamProject
             this.linkLabel1.TabIndex = 15;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Şifremi unuttum...";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // pictureBox3
             // 

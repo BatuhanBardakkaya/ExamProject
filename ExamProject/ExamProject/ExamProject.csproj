@@ -61,6 +61,55 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>examdatabaseDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="examdatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>examdatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="examdatabaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>examdatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="examdatabaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>examdatabaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="examdatabaseDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>examdatabaseDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="examdatabaseDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>examdatabaseDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminAnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminAnaEkran.Designer.cs">
+      <DependentUpon>FrmAdminAnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminOgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminOgr.Designer.cs">
+      <DependentUpon>FrmAdminOgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminOgrt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminOgrt.Designer.cs">
+      <DependentUpon>FrmAdminOgrt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminSoru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminSoru.Designer.cs">
+      <DependentUpon>FrmAdminSoru.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGirisekran.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +121,12 @@
     </Compile>
     <Compile Include="Frmogranasayfa.Designer.cs">
       <DependentUpon>Frmogranasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrenciBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrenciBilgi.Designer.cs">
+      <DependentUpon>FrmOgrenciBilgi.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmOgrencikayit.cs">
       <SubType>Form</SubType>
@@ -91,6 +146,30 @@
     <Compile Include="FrmAdminGiris.Designer.cs">
       <DependentUpon>FrmAdminGiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOgrSınav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrSınav.Designer.cs">
+      <DependentUpon>FrmOgrSınav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrtOgrencibilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrtOgrencibilgi.Designer.cs">
+      <DependentUpon>FrmOgrtOgrencibilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrtSoruekleGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrtSoruekleGuncelle.Designer.cs">
+      <DependentUpon>FrmOgrtSoruekleGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSifredegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSifredegistir.Designer.cs">
+      <DependentUpon>FrmSifredegistir.cs</DependentUpon>
+    </Compile>
     <Compile Include="OgrtAnaEkran.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,11 +178,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAdminAnaEkran.resx">
+      <DependentUpon>FrmAdminAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminOgr.resx">
+      <DependentUpon>FrmAdminOgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminOgrt.resx">
+      <DependentUpon>FrmAdminOgrt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminSoru.resx">
+      <DependentUpon>FrmAdminSoru.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGirisekran.resx">
       <DependentUpon>FrmGirisekran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frmogranasayfa.resx">
       <DependentUpon>Frmogranasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrenciBilgi.resx">
+      <DependentUpon>FrmOgrenciBilgi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOgrencikayit.resx">
       <DependentUpon>FrmOgrencikayit.cs</DependentUpon>
@@ -113,6 +207,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdminGiris.resx">
       <DependentUpon>FrmAdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrSınav.resx">
+      <DependentUpon>FrmOgrSınav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrtOgrencibilgi.resx">
+      <DependentUpon>FrmOgrtOgrencibilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrtSoruekleGuncelle.resx">
+      <DependentUpon>FrmOgrtSoruekleGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSifredegistir.resx">
+      <DependentUpon>FrmSifredegistir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OgrtAnaEkran.resx">
       <DependentUpon>OgrtAnaEkran.cs</DependentUpon>
@@ -160,6 +266,61 @@
     <None Include="examdatabaseDataSet2.xss">
       <DependentUpon>examdatabaseDataSet2.xsd</DependentUpon>
     </None>
+    <None Include="examdatabaseDataSet3.xsc">
+      <DependentUpon>examdatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>examdatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="examdatabaseDataSet3.xss">
+      <DependentUpon>examdatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet4.xsc">
+      <DependentUpon>examdatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>examdatabaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="examdatabaseDataSet4.xss">
+      <DependentUpon>examdatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet5.xsc">
+      <DependentUpon>examdatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>examdatabaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="examdatabaseDataSet5.xss">
+      <DependentUpon>examdatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet6.xsc">
+      <DependentUpon>examdatabaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>examdatabaseDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="examdatabaseDataSet6.xss">
+      <DependentUpon>examdatabaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet7.xsc">
+      <DependentUpon>examdatabaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="examdatabaseDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>examdatabaseDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="examdatabaseDataSet7.xss">
+      <DependentUpon>examdatabaseDataSet7.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -184,6 +345,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\9d1fa68d45beff3aa4a0f8361241da70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-left-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

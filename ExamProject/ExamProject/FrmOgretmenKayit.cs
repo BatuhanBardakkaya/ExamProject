@@ -51,5 +51,12 @@ namespace ExamProject
             this.Hide();
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FrmGirisekran frmGirisekran = new FrmGirisekran();
+            frmGirisekran.Show();
+            this.Hide();
+        }
     }
 }

@@ -43,6 +43,8 @@ namespace ExamProject
             this.KytSadlbl = new System.Windows.Forms.Label();
             this.KytAdlbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Kytbutton
@@ -60,21 +62,21 @@ namespace ExamProject
             this.ogrtKyttelnotxt.Location = new System.Drawing.Point(894, 267);
             this.ogrtKyttelnotxt.Name = "ogrtKyttelnotxt";
             this.ogrtKyttelnotxt.Size = new System.Drawing.Size(167, 22);
-            this.ogrtKyttelnotxt.TabIndex = 28;
+            this.ogrtKyttelnotxt.TabIndex = 5;
             // 
             // ogrtKytadtxt
             // 
             this.ogrtKytadtxt.Location = new System.Drawing.Point(169, 267);
             this.ogrtKytadtxt.Name = "ogrtKytadtxt";
             this.ogrtKytadtxt.Size = new System.Drawing.Size(167, 22);
-            this.ogrtKytadtxt.TabIndex = 27;
+            this.ogrtKytadtxt.TabIndex = 1;
             // 
             // ogrtKytemailtxt
             // 
             this.ogrtKytemailtxt.Location = new System.Drawing.Point(894, 360);
             this.ogrtKytemailtxt.Name = "ogrtKytemailtxt";
             this.ogrtKytemailtxt.Size = new System.Drawing.Size(167, 22);
-            this.ogrtKytemailtxt.TabIndex = 26;
+            this.ogrtKytemailtxt.TabIndex = 6;
             // 
             // KytEmaillbl
             // 
@@ -101,7 +103,7 @@ namespace ExamProject
             this.ogrtKytKsifretxt.Location = new System.Drawing.Point(495, 354);
             this.ogrtKytKsifretxt.Name = "ogrtKytKsifretxt";
             this.ogrtKytKsifretxt.Size = new System.Drawing.Size(167, 22);
-            this.ogrtKytKsifretxt.TabIndex = 23;
+            this.ogrtKytKsifretxt.TabIndex = 4;
             // 
             // KytKsiflbl
             // 
@@ -118,7 +120,7 @@ namespace ExamProject
             this.ogrtKytKadtxt.Location = new System.Drawing.Point(495, 267);
             this.ogrtKytKadtxt.Name = "ogrtKytKadtxt";
             this.ogrtKytKadtxt.Size = new System.Drawing.Size(167, 22);
-            this.ogrtKytKadtxt.TabIndex = 21;
+            this.ogrtKytKadtxt.TabIndex = 3;
             // 
             // KytKadlbl
             // 
@@ -135,7 +137,7 @@ namespace ExamProject
             this.ogrtKytsoyadtxt.Location = new System.Drawing.Point(169, 360);
             this.ogrtKytsoyadtxt.Name = "ogrtKytsoyadtxt";
             this.ogrtKytsoyadtxt.Size = new System.Drawing.Size(167, 22);
-            this.ogrtKytsoyadtxt.TabIndex = 19;
+            this.ogrtKytsoyadtxt.TabIndex = 2;
             // 
             // KytSadlbl
             // 
@@ -168,11 +170,23 @@ namespace ExamProject
             this.label1.TabIndex = 16;
             this.label1.Text = "Kayıt Formu";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ExamProject.Properties.Resources.icons8_left_50;
+            this.pictureBox1.Location = new System.Drawing.Point(1183, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1226, 562);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Kytbutton);
             this.Controls.Add(this.ogrtKyttelnotxt);
             this.Controls.Add(this.ogrtKytadtxt);
@@ -189,6 +203,7 @@ namespace ExamProject
             this.Controls.Add(this.label1);
             this.Name = "Form3";
             this.Text = "Form3";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,5 +225,6 @@ namespace ExamProject
         private System.Windows.Forms.Label KytSadlbl;
         private System.Windows.Forms.Label KytAdlbl;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

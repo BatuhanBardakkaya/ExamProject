@@ -16,5 +16,26 @@ namespace ExamProject
         {
             InitializeComponent();
         }
+
+        private void Loginbut_Click(object sender, EventArgs e)
+        {
+            if (AdminTxt.Text=="Batu"&&AdminSifreTxt.Text=="Batu123")
+            {
+                FrmAdminAnaEkran frmAdminAnaEkran = new FrmAdminAnaEkran();
+                frmAdminAnaEkran.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı Adı veya Şifreniz Hatalı!");
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FrmGirisekran frmGirisekran = new FrmGirisekran();
+            frmGirisekran.Show();
+            this.Hide();
+        }
     }
 }
